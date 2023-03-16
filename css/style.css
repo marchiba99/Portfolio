@@ -1,95 +1,92 @@
-/* Estilos para el navbar */
+/* Navbar */
 .navbar {
-	background-color: #343a40;
-	padding: 20px 30px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .navbar-brand {
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+}
+
+.nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-item {
+	margin-right: 20px;
 }
 
 .nav-link {
-	color: #f8f9fa;
 	font-size: 18px;
-	font-weight: bold;
-	margin-left: 20px;
+	color: #333;
+	text-decoration: none;
 }
 
 .nav-link:hover {
-	color: #ffc107;
+	color: #000;
 }
 
-/* Estilos para las diferentes secciones */
+/* Secciones */
 section {
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
-h1 {
-	font-size: 48px;
-	font-weight: bold;
-	margin-bottom: 30px;
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
-p {
-	font-size: 24px;
-	line-height: 1.5;
-	margin-bottom: 30px;
+.text-center {
+	text-align: center;
 }
 
-/* Estilos para la sección "Sobre mí" */
-#about {
-	background-color: #f8f9fa;
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-#about h1 {
-	color: #343a40;
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-/* Estilos para la sección "Servicios" */
-#services {
-	background-color: #343a40;
-	color: #f8f9fa;
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px;
 }
 
-#services h1 {
-	color: #f8f9fa;
+.col-md-6 {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding: 0 20px;
 }
 
-/* Estilos para la sección "Portfolio" */
-#portfolio {
-	background-color: #f8f9fa;
+.col-md-4 {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	padding: 0 20px;
 }
 
-#portfolio h1 {
-	color: #343a40;
+/* Botones */
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #333;
+	text-decoration: none;
 }
 
-/* Estilos para la sección "Contacto" */
-#contact {
-	background-color: #343a40;
-	color: #f8f9fa;
-}
-
-#contact h1 {
-	color: #f8f9fa;
-}
-
-/* Estilos para la sección "Inicio" */
-#home {
-	background-image: url('https://www.example.com/images/background.jpg');
-	background-size: cover;
-	background-position: center;
-	color: #f8f9fa;
-}
-
-#home h1 {
-	font-size: 72px;
-	margin-bottom: 0;
-}
-
-#home p {
-	font-size: 36px;
-	margin-top: 0;
-	margin-bottom: 50px;
+.btn:hover {
+	background-color: #000;
 }

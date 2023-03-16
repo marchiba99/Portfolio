@@ -1,48 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Mi portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Mi Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#home">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">Sobre mí</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#services">Servicios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contacto</a>
-            </li>
-        </ul>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+        <div class="container flex-between">
+            <a class="navbar-brand" href="#">Mi portfolio</a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Sección "Inicio" -->
+<section id="home" class="container flex-center">
+    <div class="text-center">
+        <h1>Bienvenidos a mi portfolio</h1>
+        <p>Este es un sitio web donde podrás conocer más sobre mi trabajo y mis habilidades.</p>
+        <button class="btn btn-primary">Más información</button>
     </div>
-</nav>
+</section>
 
-<div id="home">
-    <h1>Inicio</h1>
-    <p>Bienvenido a mi portfolio.</p>
-</div>
-
-<div id="about">
-    <h1>Sobre mí</h1>
-    <p>Descripción sobre ti.</p>
-</div>
+<!-- Sección "Sobre mí" -->
+<section id="about" class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://www.example.com/images/about.jpg" alt="Foto de perfil">
+        </div>
+        <div class="col-md-6">
+            <h1>Sobre mí</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum ultrices quam eget dignissim. Sed eget eros vitae quam egestas bibendum. Morbi blandit, purus sit amet vestibulum aliquet, risus est efficitur nisi, vel ullamcorper lectus ipsum in arcu. Ut vel faucibus elit.</p>
+        </div>
+    </div>
+</section>
 
 <div id="services">
     <h1>Servicios</h1>
